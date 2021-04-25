@@ -22,7 +22,7 @@ docker_run: docker_build
 		docker run \
 		--name hello-world-printer-dev \
 		-p 5000:5000 \
-		-d hello-world-printer  # uruchomienie w tle serwisu ...
+		-d hello-world-printer  # uruchomienie w tle serwisu
 
 USERNAME=lenaww
 TAG=$(USERNAMME)/hello-world-printer
