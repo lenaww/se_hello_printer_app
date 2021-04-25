@@ -25,7 +25,7 @@ docker_run: docker_build
 		-d hello-world-printer  # uruchomienie w tle serwisu
 
 USERNAME=lenaww
-TAG=$(USERNAMME)/hello-world-printer
+TAG=$(USERNAME)/hello-world-printer
 
 docker_push: docker_build
 		@docker login --username $(USERNAME) -- pasword $${DOCKER_PASSWORD}; \
