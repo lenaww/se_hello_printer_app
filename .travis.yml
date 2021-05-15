@@ -4,8 +4,9 @@ services:
 install:
   - make deps
 script:
-  - make test
+  - make test  # 5 min
   - make lint
+after_succes:
   - make docker_build
   - make docker_push
 
